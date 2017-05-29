@@ -4,17 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 第一题
+namespace 第三题
 {
     class Program
     {
         static void Main(string[] args)
         {
 
+            int max = int.MaxValue; 
             try
             {
-                Console.WriteLine("请输入一个整数：");
-                byte b = Convert.ToByte(Console.ReadLine());
+                unchecked {
+                    int i = max * 2;
+                    Console.WriteLine(i);
+                }
+                checked {
+                    int j = max * 2;
+                    Console.WriteLine(j);
+                }
             }
             catch (Exception ex)
             {
@@ -22,7 +29,7 @@ namespace 第一题
                 Console.WriteLine(ex.Message);
             }
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }

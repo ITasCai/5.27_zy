@@ -4,25 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace 第一题
+namespace 第二题
 {
     class Program
     {
         static void Main(string[] args)
         {
-
+            string i = "abc";
             try
             {
-                Console.WriteLine("请输入一个整数：");
-                byte b = Convert.ToByte(Console.ReadLine());
+                int str = Convert.ToInt32(i);
             }
             catch (Exception ex)
             {
-
                 Console.WriteLine(ex.Message);
-            }
 
-            Console.ReadLine();
+            }
+            finally {
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
         }
     }
 }
