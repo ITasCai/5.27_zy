@@ -46,7 +46,7 @@ namespace 第四题
                 string xz = Console.ReadLine();
                 if ("Y".Equals(xz) || "y".Equals(xz))
                 {
-                        //删除集合中的元素
+                        //删除集合中的元素 
                     ht.Remove(name);
                     Console.WriteLine("删除成功！");
                         break;
