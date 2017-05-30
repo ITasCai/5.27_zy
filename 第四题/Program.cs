@@ -26,11 +26,20 @@ namespace 第四题
                 {
                     case 'A':
                         //添加
-                     
+                        Function.Add();
+                        break;
+                    case 'B':
+                        //删除
+                        Function.Remove();
+                        break;
+           
+                    case 'C':
+                        //修改
+                        Function.Modification();
                         break;
                     case 'S':
                         //查询
-                      
+                        Function.Query();
                         break;
                     //退出
                     case 'Q':
